@@ -13,14 +13,12 @@ class Hall(Star_cinema):
         self.hall_no=hall_no
         self._show_list=[]
         self.seat={}
-        val=(row,col,hall_no)
-        cinema=Star_cinema()
-        cinema.entry_hall(val)
+        val=Star_cinema(row,col,hall_no)
+       
+        self.entry_hall(val)
        
        
         super().__init__() 
-
-      
         
         
     def entry_show(self,id,movie_name,time):
